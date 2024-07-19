@@ -25,7 +25,7 @@
 
                 <div class="form__error">
                     @error('name')
-                        {{ $message}}
+                        {{ $message}}j
                     @enderror
                 </div>
             </div>
