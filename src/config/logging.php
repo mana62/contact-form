@@ -75,13 +75,13 @@ return [
             'level' => env('LOG_LEVEL', 'critical'),
         ],
 
-        'papertrail' => [
+        'appertain' => [
             'driver' => 'monolog',
             'level' => env('LOG_LEVEL', 'debug'),
             'handler' => SyslogUdpHandler::class,
             'handler_with' => [
-                'host' => env('PAPERTRAIL_URL'),
-                'port' => env('PAPERTRAIL_PORT'),
+                'host' => env('APPERTAIN_URL'),
+                'port' => env('APPERTAIN_PORT'),
             ],
         ],
 
